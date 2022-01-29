@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "thumbs": "(mkdir -p ../public/lg/thumbs && node index.js)",
-    "cache": "(mkdir -p ../public/lg/cache && mkdir -p ../completed && node index.js cache true)"
+    "compress": "mkdir -p ../public/lg/thumbs && mkdir -p ../public/lg/images && mkdir -p ../album-images-processed && node index.js true"
   },
   "author": "",
   "license": "ISC",

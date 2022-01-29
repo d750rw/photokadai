@@ -7,14 +7,32 @@ Simple photo album generator.
 * node 14.x (14.17.5)
 
 ## Initialize
-1. **Star** this repo in github
-2. **Fork** this repo in github, rename it (say, `new_album`)
-3. Clone `new_album` repo to your local machine
-4. Go into the directory in terminal `cd new_album` 
-5. Copy your photos into `/album-images` directory
-6. Compress the images using `npm run compress`
-7. Update the `homepage` field in the `package.json` file. Should be in `https://{gh_username}.github.io/{repo_name}` format.
-8. Cleanup/update this `README.md` file
-<!-- 8. Update `<title>React App</title>` in `index.html` and `manifest.json` -->
-8. Git commit `git add . && git commit -m "photos added"`
-9. Push to Github `git push`
+* Click on the **Star** located at the top-right corner of this page.
+
+* Click on **Use this template** and enter *Repository name*. Say, `my_album_001`
+
+* Click on **Create repository from template**
+
+* Clone `my_album_001` repo to your local machine
+
+* Go into the directory in terminal `cd my_album_001` 
+
+* Copy your photos into `./album-images` directory
+
+* Compress the images using `npm run compress`
+
+* Update the `homepage` field in the `package.json` file. Should be in `https://{your_user_name}.github.io/my_album_001` format
+
+* Cleanup/update this `README.md` file as needed
+
+* Git commit `git add . && git commit -m "photos added"`
+
+* Push to Github `git push`
+
+* Wait for Build to complete under *Actions* tab `https://github.com/{your_user_name}/my_album_001/actions`
+
+* Ensure github pages is enabled and points to *gh-pages* branch under 
+
+*Settings* tab `https://github.com/{your_user_name}/my_album_001/settings/pages`
+
+* Go to `https://{your_user_name}.github.io/my_album_001` for your album

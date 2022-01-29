@@ -64,19 +64,19 @@ xxl: 1400px */
 @media (min-width: 992px) {  /*lg*/
   .gallary-wrap {
     padding: 20px;
-    column-count: 5;
+    column-count: 4;
   }
 }
 @media (min-width: 1200px) { /*xl*/
   .gallary-wrap {
     padding: 20px;
-    column-count: 6;
+    column-count: 4;
   }
 }
 @media (min-width: 1400px) { /*xxl*/
   .gallary-wrap {
     padding: 20px;
-    column-count: 7;
+    column-count: 4;
   }
 }
 
