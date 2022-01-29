@@ -1,0 +1,17 @@
+{
+  "name": "thumbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "thumbs": "(mkdir -p ../public/lg/thumbs && node index.js)",
+    "cache": "(mkdir -p ../public/lg/cache && mkdir -p ../completed && node index.js cache true)"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "image-size": "^1.0.1",
+    "image-thumbnail": "^1.0.14"
+  }
+}
