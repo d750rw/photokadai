@@ -93,3 +93,8 @@ xxl: 1400px */
 .gallary-wrap .gallery-item:hover img {
   transform: scale(1.02);
 }
+
+.gallery-error {
+  color: red;
+  font-size: 1.2rem;
+}

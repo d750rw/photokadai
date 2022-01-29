@@ -18,13 +18,12 @@ import { GalleryItem } from 'lightgallery/lg-utils';
 
 function App() {
   const [images, setImages] = useState([] as GalleryItem[]);
+  const [err, setErr] = useState('');
   const lightGallery = useRef<any>(null);
   const getData = () => {
-    fetch('./lg/images.json', {
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
+    setErr('')
+    fetch(document?.location?.href?.indexOf('d750rw.github.io/photokadai') > 0 ? './lg/default.json' : './lg/images.json', {
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
     }
     ).then(function (response) {
       return response.json()
@@ -33,6 +32,8 @@ function App() {
       if (lightGallery) {
         lightGallery.current.refresh();
       }
+    }).catch(() => {
+      setErr('Unable to load Album details, images.json');
     })
   }
   useEffect(() => { getData() }, [])
@@ -61,6 +62,7 @@ function App() {
         </LightGallery>
         <span style={{ display: 'none' }}>learn react</span>
       </div>
+      {err && err.length && <h2 className="gallery-error">{err}</h2>}
     </div>
   );
 }
