@@ -19,6 +19,12 @@ function App() {
   const [images, setImages] = useState([] as GalleryItem[])
   const [err, setErr] = useState('')
   const lightGallery = useRef<any>(null)
+  const backButtonFix = () => {
+    const href = window.location.href
+    if (href) {
+      window.history.pushState({}, '', new URL(href.indexOf('/#') > 0 ? href.substring(0, href.indexOf('/#')) : href))
+    }
+  }
   const getData = () => {
     setErr('')
     fetch(document?.location?.href?.indexOf('d750rw.github.io/photokadai') > 0 ? './lg/default.json' : './lg/images.json', {
@@ -53,6 +59,7 @@ function App() {
     <div className="App">
       <div className='gallary-wrap'>
         <LightGallery onInit={(detail) => { if (detail) lightGallery.current = detail.instance }}
+          onAfterOpen={backButtonFix}
           plugins={[lgZoom, lgAutoplay, lgFullscreen, lgHash, lgThumbnail]} mode="lg-fade"
           preload={2}
           mobileSettings={{ controls: false, showCloseIcon: true, download: false }}
