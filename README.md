@@ -23,6 +23,8 @@ Simple photo album generator.
 
 * Update the `homepage` field in the `package.json` file. Should be in `https://{your_user_name}.github.io/my_album_001` format
 
+* Update the `meta` tags in `public/index.html` file as needed.
+
 * Cleanup/update this `README.md` file as needed
 
 * Git commit `git add . && git commit -m "photos added"`
