@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/photokadai/static/css/main.bb3c4119.css",
-    "main.js": "/photokadai/static/js/main.5fe4143b.js",
+    "main.js": "/photokadai/static/js/main.58d7f4c6.js",
     "static/js/787.d2309e43.chunk.js": "/photokadai/static/js/787.d2309e43.chunk.js",
     "static/media/lg.svg?io9a6k": "/photokadai/static/media/lg.09cd8e9be7081f216644.svg",
     "static/media/lg.woff?io9a6k": "/photokadai/static/media/lg.356a0e9cb064c7a196c6.woff",
@@ -9,11 +9,11 @@
     "static/media/lg.woff2?io9a6k": "/photokadai/static/media/lg.64b800aa30714fd916dc.woff2",
     "index.html": "/photokadai/index.html",
     "main.bb3c4119.css.map": "/photokadai/static/css/main.bb3c4119.css.map",
-    "main.5fe4143b.js.map": "/photokadai/static/js/main.5fe4143b.js.map",
+    "main.58d7f4c6.js.map": "/photokadai/static/js/main.58d7f4c6.js.map",
     "787.d2309e43.chunk.js.map": "/photokadai/static/js/787.d2309e43.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb3c4119.css",
-    "static/js/main.5fe4143b.js"
+    "static/js/main.58d7f4c6.js"
   ]
 }
