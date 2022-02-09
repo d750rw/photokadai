@@ -1,10 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import './App.css'
 import LightGallery from 'lightgallery/react'
-import lgZoom from 'lightgallery/plugins/zoom'
-import lgAutoplay from 'lightgallery/plugins/autoplay'
-import lgFullscreen from 'lightgallery/plugins/fullscreen'
-import lgHash from 'lightgallery/plugins/hash'
 import 'lightgallery/css/lightgallery.css'
 import 'lightgallery/css/lg-zoom.css'
 import 'lightgallery/css/lg-thumbnail.css'
@@ -57,8 +53,7 @@ function App() {
     <div className="App">
       <div className='gallary-wrap'>
         <LightGallery onInit={(detail) => { if (detail) lightGallery.current = detail.instance }}
-          onAfterOpen={backButtonFix}
-          plugins={[lgZoom, lgAutoplay, lgFullscreen, lgHash]} mode="lg-fade"
+          onAfterOpen={backButtonFix} mode="lg-fade"
           preload={2}
           mobileSettings={{ controls: false, showCloseIcon: true, download: false }}
         >
